@@ -1,94 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mohammed's Creative Portfolio</title>
+  <title>Mohammed | Creative Dev</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Navigation -->
   <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#interests">Interests</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <div class="nav-container">
+      <div class="logo">Mohammed<span>.</span></div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="theme-toggle">☀️</button></li>
+      </ul>
+    </div>
   </nav>
 
-  <!-- Hero Section -->
   <header id="home">
-    <div class="hero">
-      <img src="https://i.imgur.com/0y0y0yD.png" alt="Mohammed Avatar" class="avatar">
-      <h1>Hey, I'm <span>Mohammed</span></h1>
-      <p>A boy who codes, designs, dreams, and sometimes breaks things just to fix them cooler 😅</p>
-      <a href="#projects" class="btn">See My Work</a>
+    <div class="hero animate">
+      <img src="https://i.imgur.com/mtbl1kN.png" alt="Profile Picture" class="hero-img" />
+      <h1>Yo, I'm <span>Mohammed</span></h1>
+      <p>A creative front-end developer & code ninja 🥷</p>
+      <a href="#projects" class="btn">Check My Projects</a>
     </div>
   </header>
 
-  <!-- Skills -->
-  <section id="skills" class="section">
-    <h2>🧠 My Superpowers</h2>
+  <section id="skills" class="section dark animate">
+    <h2>🧠 Skills & Tools</h2>
     <div class="grid">
-      <div class="card">💻 HTML<br><span>Nesting divs like a nesting doll master</span></div>
-      <div class="card">🎨 CSS<br><span>Making margins behave since 2022</span></div>
-      <div class="card">⚙️ JavaScript<br><span>Writing logic that sometimes even I understand</span></div>
-      <div class="card">📱 Responsive Design<br><span>Looks good on your phone and your grandma’s TV</span></div>
-      <div class="card">🖌️ Photoshop & Figma<br><span>Designs with pixels and vibes</span></div>
+      <div class="card">💻 HTML & CSS</div>
+      <div class="card">⚡ JavaScript</div>
+      <div class="card">🎨 Figma</div>
+      <div class="card">🧩 React Basics</div>
+      <div class="card">📱 Responsive UI</div>
+      <div class="card">🕹️ Game Dev Hobbyist</div>
     </div>
   </section>
 
-  <!-- Projects -->
-  <section id="projects" class="section alt">
-    <h2>🛠️ Projects</h2>
-    <p class="subtitle">Crafted with 💡 ideas and ☕ fuel</p>
-    <div class="grid project-grid">
+  <section id="projects" class="section animate">
+    <h2>🚀 Featured Projects</h2>
+    <div class="project-grid">
       <div class="project-card">
-        <img src="https://i.imgur.com/GXoYmD2.jpg" alt="Project One">
-        <h3>Portfolio Website</h3>
-        <p>Yep, this one. Fully responsive, super stylish.</p>
+        <img src="https://i.imgur.com/Ln0Hc7i.jpg" alt="Project 1">
+        <div class="card-content">
+          <h3>Modern Portfolio</h3>
+          <p>A slick, responsive portfolio with dark/light toggle and animations.</p>
+        </div>
       </div>
       <div class="project-card">
-        <img src="https://i.imgur.com/FvptLyx.jpg" alt="Project Two">
-        <h3>Mobile App UI</h3>
-        <p>Design for a chill productivity app with cool vibes.</p>
-      </div>
-      <div class="project-card">
-        <img src="https://i.imgur.com/1o1zE6Z.jpg" alt="Project Three">
-        <h3>Game Dashboard</h3>
-        <p>Stats, animations, dark mode. Gamers approve.</p>
+        <img src="https://i.imgur.com/ZKZ8bFX.jpg" alt="Project 2">
+        <div class="card-content">
+          <h3>Gaming Stats UI</h3>
+          <p>Leaderboard dashboard built with CSS Grid and charts.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Interests -->
-  <section id="interests" class="section">
-    <h2>🎯 Stuff I’m Into</h2>
-    <div class="grid">
-      <div class="card">☕ Coffee<br><span>My best bug fixer</span></div>
-      <div class="card">📸 Photography<br><span>Snaps that tell stories</span></div>
-      <div class="card">🎮 Gaming<br><span>Where I procrastinate strategically</span></div>
-      <div class="card">✈️ Travel<br><span>Hunting for cafes with Wi-Fi</span></div>
-      <div class="card">🎧 Music<br><span>Code powered by lo-fi beats</span></div>
-    </div>
+  <section id="contact" class="section dark animate">
+    <h2>📬 Let's Connect</h2>
+    <p>Got a project? Wanna talk code, games, or tech?</p>
+    <a class="email" href="mailto:mohammed@example.com">mohammed@example.com</a>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="section alt contact">
-    <h2>📬 Let's Talk</h2>
-    <p>Want to work together or just say hey?</p>
-    <p>Email: <a href="mailto:mohammed@example.com">mohammed@example.com</a></p>
-    <p>LinkedIn: <a href="#">linkedin.com/in/mohammed</a></p>
-  </section>
-
-  <!-- Footer -->
   <footer>
-    <p>© 2025 Mohammed — Coded with heart, coffee, and curiosity 💖</p>
+    <p>Built by Mohammed © 2025 | Code, coffee & keyboard rage 💥</p>
   </footer>
 
+  <script>
+    // Theme toggle
+    const toggleBtn = document.getElementById('theme-toggle');
+    const root = document.documentElement;
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    toggleBtn.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+
+    toggleBtn.onclick = () => {
+      const current = root.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      toggleBtn.textContent = next === 'dark' ? '☀️' : '🌙';
+    };
+
+    // Animation on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.animate').forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
