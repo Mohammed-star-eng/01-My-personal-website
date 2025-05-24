@@ -2,83 +2,145 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mohammed | Creative Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mohammed's Creative Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="#bio">Bio</a></li>
-      <li><a href="#skills">My Super Powers</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">Mohammed</div>
+      <ul class="nav-links">
+        <li><a href="#bio">Bio</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="theme-toggle">
+        <input type="checkbox" id="theme-switch" />
+        <label for="theme-switch" aria-label="Toggle Dark Mode">🌙</label>
+      </div>
+    </div>
   </nav>
 
-  <!-- Header -->
-  <header id="bio">
-    <img src="https://cdn-icons-png.flaticon.com/512/706/706830.png" alt="Profile" class="profile-pic"/>
-    <p class="bio">Hi, I’m Mohammed! A passionate web wizard who codes, designs, and dreams in pixels. I turn caffeine into code and creativity into clean UI magic.</p>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+      <div class="profile-pic-wrapper">
+        <!-- Animated SVG Profile Placeholder -->
+        <svg class="profile-pic" width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Profile Picture Placeholder" role="img">
+          <circle cx="75" cy="75" r="70" stroke="#ff7f50" stroke-width="5" />
+          <circle class="pulse-circle" cx="75" cy="75" r="55" fill="#ff7f50" fill-opacity="0.2" />
+          <text x="50%" y="50%" text-anchor="middle" fill="#ff7f50" font-size="45" font-family="Segoe UI, Arial" dy=".3em">M</text>
+        </svg>
+      </div>
+      <h1>Hi, I'm <span>Mohammed</span></h1>
+      <p>A passionate developer crafting engaging web experiences with a touch of creativity and a dash of humor.</p>
+    </div>
   </header>
 
   <!-- Skills Section -->
-  <section id="skills">
-    <h2>💥 My Super Powers</h2>
-    <div class="skill-list">
-      <div class="skill">💻 HTML — Semantic sorcerer</div>
-      <div class="skill">🎨 CSS — I make it pop</div>
-      <div class="skill">⚙️ JavaScript — Logic with flair</div>
-      <div class="skill">🧠 UX/UI — For human-first design</div>
-      <div class="skill">🖌️ Graphics — Fonts & palettes whisper to me</div>
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2>My Super Powers</h2>
+      <div class="skill-list">
+        <div class="skill">💻 HTML - Structuring the web</div>
+        <div class="skill">🎨 CSS - Styling with flair</div>
+        <div class="skill">⚙️ JavaScript - Bringing pages to life</div>
+        <div class="skill">🧠 UX/UI - Designing intuitive interfaces</div>
+        <div class="skill">🖌️ Graphic Design - Visual storytelling</div>
+      </div>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects">
-    <h2>📂 Projects</h2>
-    <p>Built with passion, styled with stubborn perfection.</p>
-    <div class="project-grid">
-      <div class="project-card">
-        <img src="https://cdn.dribbble.com/users/1012566/screenshots/4171367/media/ed9115e4e3c8f85c2d4643b2281d3a6a.gif" alt="Project 1">
-        <p>Responsive Landing Page</p>
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2>My Projects</h2>
+      <p>Here are some of the projects I've worked on:</p>
+      <div class="project-grid">
+        <div class="project-card" tabindex="0">
+          <!-- Animated SVG project placeholder -->
+          <svg class="project-img" viewBox="0 0 300 200" aria-label="Project One Placeholder" role="img">
+            <rect width="300" height="200" rx="15" ry="15" fill="#ff7f50" />
+            <circle class="spin" cx="150" cy="100" r="40" stroke="#fff" stroke-width="6" fill="none" />
+            <text x="150" y="110" text-anchor="middle" fill="#fff" font-size="30" font-family="Segoe UI, Arial">1</text>
+          </svg>
+          <h3>Project One</h3>
+        </div>
+        <div class="project-card" tabindex="0">
+          <svg class="project-img" viewBox="0 0 300 200" aria-label="Project Two Placeholder" role="img">
+            <rect width="300" height="200" rx="15" ry="15" fill="#ff7f50" />
+            <circle class="spin" cx="150" cy="100" r="40" stroke="#fff" stroke-width="6" fill="none" />
+            <text x="150" y="110" text-anchor="middle" fill="#fff" font-size="30" font-family="Segoe UI, Arial">2</text>
+          </svg>
+          <h3>Project Two</h3>
+        </div>
+        <div class="project-card" tabindex="0">
+          <svg class="project-img" viewBox="0 0 300 200" aria-label="Project Three Placeholder" role="img">
+            <rect width="300" height="200" rx="15" ry="15" fill="#ff7f50" />
+            <circle class="spin" cx="150" cy="100" r="40" stroke="#fff" stroke-width="6" fill="none" />
+            <text x="150" y="110" text-anchor="middle" fill="#fff" font-size="30" font-family="Segoe UI, Arial">3</text>
+          </svg>
+          <h3>Project Three</h3>
+        </div>
       </div>
-      <div class="project-card">
-        <img src="https://cdn.dribbble.com/users/730703/screenshots/3600582/media/019ec84082f33f539e21c556f6adcb72.gif" alt="Project 2">
-        <p>Animated Mobile App UI</p>
-      </div>
-      <div class="project-card">
-        <img src="https://cdn.dribbble.com/users/199982/screenshots/3206369/media/ce2244c1708a9bcab601c134fb3bbfe8.gif" alt="Project 3">
-        <p>Dashboard Design</p>
+    </div>
+  </section>
+
+  <!-- Interests Section -->
+  <section class="interests" id="interests">
+    <div class="container">
+      <h2>Things I Like</h2>
+      <div class="interests-grid">
+        <div class="interest">
+          <img src="https://img.icons8.com/emoji/96/coffee.png" alt="Coffee" />
+          <p>Coffee<br><span>Fueling my code sessions.</span></p>
+        </div>
+        <div class="interest">
+          <img src="https://img.icons8.com/emoji/96/camera.png" alt="Photography" />
+          <p>Photography<br><span>Capturing moments.</span></p>
+        </div>
+        <div class="interest">
+          <img src="https://img.icons8.com/emoji/96/video-game.png" alt="Gaming" />
+          <p>Gaming<br><span>Strategic relaxation.</span></p>
+        </div>
+        <div class="interest">
+          <img src="https://img.icons8.com/emoji/96/globe-showing-europe-africa.png" alt="Traveling" />
+          <p>Traveling<br><span>Exploring new horizons.</span></p>
+        </div>
+        <div class="interest">
+          <img src="https://img.icons8.com/emoji/96/musical-notes.png" alt="Music" />
+          <p>Music<br><span>Setting the mood for coding.</span></p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact">
-    <h2>📫 Contact Me</h2>
-    <p>Let’s collaborate, chat, or simply share coffee memes.</p>
-    <div class="contact-options">
-      <a href="mailto:mohammed@example.com">✉️ Email</a>
-      <a href="https://www.linkedin.com/in/mohammed" target="_blank">🔗 LinkedIn</a>
-      <a href="https://github.com/mohammed" target="_blank">🐙 GitHub</a>
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out through any of the platforms below:</p>
+      <div class="contact-methods">
+        <a href="mailto:mohammed@example.com" class="contact-link" aria-label="Email Mohammed">📧 Email</a>
+        <a href="#" class="contact-link" aria-label="LinkedIn Profile">💼 LinkedIn</a>
+        <a href="#" class="contact-link" aria-label="Twitter Profile">🐦 Twitter</a>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Mohammed. Powered by imagination ☕</p>
+    <div class="container">
+      <p>© 2025 Mohammed. Crafted with passion and coffee.</p>
+    </div>
   </footer>
-
-  <!-- Script for Theme Toggle -->
-  <script>
-    function toggleTheme() {
-      document.body.classList.toggle('dark');
-    }
-  </script>
 
 </body>
 </html>
+
