@@ -472,3 +472,18 @@ input:focus,
   font-weight: 500;
   user-select: none;
 }
+.skill-list a,
+.interests-grid a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+
+.skill-list a:hover,
+.interests-grid a:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  background-color: #fff6f0;
+}
