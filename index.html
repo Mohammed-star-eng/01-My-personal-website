@@ -2,124 +2,97 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mohammed's Creative Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mohammed's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
 </head>
 <body>
-
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="container">
-      <div class="logo">Mohammed</div>
-      <ul class="nav-links">
+  <nav>
+    <div class="nav-container">
+      <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Mohammed's Photo" class="nav-profile-pic" />
+      <ul>
         <li><a href="#bio">Bio</a></li>
-        <li><a href="#skills">Skills</a></li>
+        <li><a href="#skills">My Super Powers</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#interests">Interests</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact">Contact Me</a></li>
       </ul>
-      <div class="theme-toggle">
-        <input type="checkbox" id="theme-switch" />
-        <label for="theme-switch">🌙</label>
-      </div>
+      <button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
     </div>
   </nav>
 
-  <!-- Header Section -->
-  <header class="header">
+  <header id="bio">
     <div class="container">
-      <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-pic" />
-      <h1>Hi, I'm <span>Mohammed</span></h1>
-      <p>A passionate developer crafting engaging web experiences with a touch of creativity and a dash of humor.</p>
+      <h1>Hello, I'm <span>Mohammed</span></h1>
+      <p class="bio-short">
+        A passionate web developer crafting sleek digital experiences. I turn ideas into interactive, intuitive realities with code and creativity.
+      </p>
     </div>
   </header>
 
-  <!-- Skills Section -->
-  <section class="skills" id="skills">
-    <div class="container">
-      <h2>My Super Powers</h2>
-      <div class="skill-list">
-        <div class="skill">💻 HTML - Structuring the web</div>
-        <div class="skill">🎨 CSS - Styling with flair</div>
-        <div class="skill">⚙️ JavaScript - Bringing pages to life</div>
-        <div class="skill">🧠 UX/UI - Designing intuitive interfaces</div>
-        <div class="skill">🖌️ Graphic Design - Visual storytelling</div>
-      </div>
+  <section id="skills" class="skills">
+    <h2>My Super Powers</h2>
+    <div class="skill-list">
+      <div class="skill">💻 HTML & CSS - Building pixel-perfect layouts</div>
+      <div class="skill">⚙️ JavaScript - Bringing websites to life</div>
+      <div class="skill">🎨 UI/UX Design - User-centered and beautiful</div>
+      <div class="skill">🧠 Problem Solving - Debugging ninja skills</div>
+      <div class="skill">🚀 Performance Optimization - Fast and smooth</div>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section class="projects" id="projects">
-    <div class="container">
-      <h2>My Projects</h2>
-      <p>Here are some of the projects I've worked on:</p>
-      <div class="project-grid">
-        <div class="project-card">
-          <img src="https://via.placeholder.com/300x200" alt="Project One" />
-          <h3>Project One</h3>
-        </div>
-        <div class="project-card">
-          <img src="https://via.placeholder.com/300x200" alt="Project Two" />
-          <h3>Project Two</h3>
-        </div>
-        <div class="project-card">
-          <img src="https://via.placeholder.com/300x200" alt="Project Three" />
-          <h3>Project Three</h3>
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <p>Hover over each project to see details!</p>
+    <div class="project-grid">
+      <div class="project-card" style="background-image:url('https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=600&q=80')">
+        <div class="overlay">
+          <h3>Portfolio Website</h3>
+          <p>Responsive portfolio site showcasing skills & projects.</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Interests Section -->
-  <section class="interests" id="interests">
-    <div class="container">
-      <h2>Things I Like</h2>
-      <div class="interests-grid">
-        <div class="interest">
-          <img src="https://img.icons8.com/emoji/96/coffee.png" alt="Coffee" />
-          <p>Coffee<br><span>Fueling my code sessions.</span></p>
+      <div class="project-card" style="background-image:url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80')">
+        <div class="overlay">
+          <h3>Task Manager App</h3>
+          <p>Organize and track tasks with this sleek React app.</p>
         </div>
-        <div class="interest">
-          <img src="https://img.icons8.com/emoji/96/camera.png" alt="Photography" />
-          <p>Photography<br><span>Capturing moments.</span></p>
-        </div>
-        <div class="interest">
-          <img src="https://img.icons8.com/emoji/96/video-game.png" alt="Gaming" />
-          <p>Gaming<br><span>Strategic relaxation.</span></p>
-        </div>
-        <div class="interest">
-          <img src="https://img.icons8.com/emoji/96/globe-showing-europe-africa.png" alt="Traveling" />
-          <p>Traveling<br><span>Exploring new horizons.</span></p>
-        </div>
-        <div class="interest">
-          <img src="https://img.icons8.com/emoji/96/musical-notes.png" alt="Music" />
-          <p>Music<br><span>Setting the mood for coding.</span></p>
+      </div>
+      <div class="project-card" style="background-image:url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80')">
+        <div class="overlay">
+          <h3>Blog Platform</h3>
+          <p>Custom CMS for bloggers with real-time comments.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>Feel free to reach out through any of the platforms below:</p>
-      <div class="contact-methods">
-        <a href="mailto:mohammed@example.com" class="contact-link">📧 Email</a>
-        <a href="#" class="contact-link">💼 LinkedIn</a>
-        <a href="#" class="contact-link">🐦 Twitter</a>
-      </div>
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+      <a href="mailto:mohammed@example.com" class="contact-item">📧 mohammed@example.com</a>
+      <a href="https://linkedin.com/in/mohammed" target="_blank" rel="noopener" class="contact-item">🔗 linkedin.com/in/mohammed</a>
+      <a href="https://github.com/mohammed" target="_blank" rel="noopener" class="contact-item">🐙 github.com/mohammed</a>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer>
-    <div class="container">
-      <p>© 2025 Mohammed. Crafted with passion and coffee.</p>
-    </div>
+    <p>Made with ❤️ and code by Mohammed © 2025</p>
   </footer>
 
+  <script>
+    // Dark Mode Toggle
+    const toggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    toggleBtn.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      if (body.classList.contains('dark-mode')) {
+        toggleBtn.textContent = '☀️';
+      } else {
+        toggleBtn.textContent = '🌙';
+      }
+    });
+  </script>
 </body>
 </html>
+
