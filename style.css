@@ -472,37 +472,3 @@ input:focus,
   font-weight: 500;
   user-select: none;
 }
-/* Default Light Theme */
-body {
-  background-color: #ffffff;
-  color: #000000;
-}
-
-/* Dark Mode when toggle is checked */
-#theme-switch:checked ~ .theme-wrapper {
-  background-color: #121212;
-  color: #e0e0e0;
-}
-
-#theme-switch:checked ~ .theme-wrapper .navbar,
-#theme-switch:checked ~ .theme-wrapper section,
-#theme-switch:checked ~ .theme-wrapper footer {
-  background-color: #1e1e1e;
-  color: #e0e0e0;
-}
-
-#theme-switch:checked ~ .theme-wrapper a {
-  color: #ff7f50;
-}
-
-#theme-switch:checked ~ .theme-wrapper .project-card,
-#theme-switch:checked ~ .theme-wrapper .skill,
-#theme-switch:checked ~ .theme-wrapper .interest {
-  background-color: #2a2a2a;
-  color: #e0e0e0;
-}
-
-#theme-switch:checked ~ .theme-wrapper svg text {
-  fill: #e0e0e0;
-}
-
