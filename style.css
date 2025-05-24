@@ -28,6 +28,9 @@ body {
   color: var(--text-color);
   line-height: 1.6;
   transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+html {
   scroll-behavior: smooth;
 }
 
