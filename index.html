@@ -5,7 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mohammed's Creative Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+
+  <style>
+    /* Smooth scroll behavior */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Light and Dark Theme Toggle */
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #000000;
+      --accent-color: #ff7f50;
+    }
+
+    body.dark {
+      --bg-color: #121212;
+      --text-color: #ffffff;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background-color 0.4s ease, color 0.4s ease;
+    }
+
+    /* Toggle dark mode using checkbox */
+    #theme-switch:checked ~ * body {
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+    /* Custom checkbox toggle handling (light/dark) */
+    .theme-toggle {
+      display: flex;
+      align-items: center;
+    }
+
+    .theme-toggle input[type="checkbox"] {
+      display: none;
+    }
+
+    .theme-toggle label {
+      cursor: pointer;
+      font-size: 1.5rem;
+      user-select: none;
+    }
+  </style>
 </head>
 <body>
 
@@ -31,7 +77,6 @@
   <header class="header">
     <div class="container">
       <div class="profile-pic-wrapper">
-        <!-- Animated SVG Profile Placeholder -->
         <svg class="profile-pic" width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Profile Picture Placeholder" role="img">
           <circle cx="75" cy="75" r="70" stroke="#ff7f50" stroke-width="5" />
           <circle class="pulse-circle" cx="75" cy="75" r="55" fill="#ff7f50" fill-opacity="0.2" />
@@ -42,6 +87,14 @@
       <p>A passionate developer crafting engaging web experiences with a touch of creativity and a dash of humor.</p>
     </div>
   </header>
+
+  <!-- About Me Section -->
+  <section id="bio">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hello! I'm Mohammed, a creative web developer with a passion for making the web more beautiful, usable, and fun. Whether it's clean code, bold design, or thoughtful UX, I love turning ideas into pixel-perfect websites that users love.</p>
+    </div>
+  </section>
 
   <!-- Skills Section -->
   <section class="skills" id="skills">
@@ -64,7 +117,6 @@
       <p>Here are some of the projects I've worked on:</p>
       <div class="project-grid">
         <div class="project-card" tabindex="0">
-          <!-- Animated SVG project placeholder -->
           <svg class="project-img" viewBox="0 0 300 200" aria-label="Project One Placeholder" role="img">
             <rect width="300" height="200" rx="15" ry="15" fill="#ff7f50" />
             <circle class="spin" cx="150" cy="100" r="40" stroke="#fff" stroke-width="6" fill="none" />
@@ -143,4 +195,3 @@
 
 </body>
 </html>
-
