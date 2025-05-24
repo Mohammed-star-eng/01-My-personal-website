@@ -64,27 +64,45 @@
       <p>Here are some of the projects I've worked on:</p>
       <div class="project-grid">
         <div class="project-card" tabindex="0">
-          <!-- Animated SVG project placeholder -->
-          <svg class="project-img" viewBox="0 0 300 200" aria-label="Project One Placeholder" role="img">
+          <!-- Animated SVG project placeholder: spinning gear -->
+          <svg class="project-img" viewBox="0 0 300 200" aria-label="Project One Placeholder" role="img" xmlns="http://www.w3.org/2000/svg">
             <rect width="300" height="200" rx="15" ry="15" fill="#ff7f50" />
-            <circle class="spin" cx="150" cy="100" r="40" stroke="#fff" stroke-width="6" fill="none" />
-            <text x="150" y="110" text-anchor="middle" fill="#fff" font-size="30" font-family="Segoe UI, Arial">1</text>
+            <g transform="translate(150,100)" class="spin">
+              <circle cx="0" cy="0" r="40" stroke="#fff" stroke-width="6" fill="none" />
+              <!-- Gear teeth -->
+              <g stroke="#fff" stroke-width="4" stroke-linecap="round">
+                <line x1="-30" y1="0" x2="-40" y2="0" />
+                <line x1="30" y1="0" x2="40" y2="0" />
+                <line x1="0" y1="-30" x2="0" y2="-40" />
+                <line x1="0" y1="30" x2="0" y2="40" />
+                <line x1="-21" y1="-21" x2="-30" y2="-30" />
+                <line x1="21" y1="-21" x2="30" y2="-30" />
+                <line x1="-21" y1="21" x2="-30" y2="30" />
+                <line x1="21" y1="21" x2="30" y2="30" />
+              </g>
+              <circle cx="0" cy="0" r="15" fill="#fff" />
+            </g>
+            <text x="150" y="110" text-anchor="middle" fill="#fff" font-size="30" font-family="Segoe UI, Arial" font-weight="bold">1</text>
           </svg>
           <h3>Project One</h3>
         </div>
         <div class="project-card" tabindex="0">
-          <svg class="project-img" viewBox="0 0 300 200" aria-label="Project Two Placeholder" role="img">
+          <!-- Animated SVG project placeholder: bouncing ball -->
+          <svg class="project-img" viewBox="0 0 300 200" aria-label="Project Two Placeholder" role="img" xmlns="http://www.w3.org/2000/svg">
             <rect width="300" height="200" rx="15" ry="15" fill="#ff7f50" />
-            <circle class="spin" cx="150" cy="100" r="40" stroke="#fff" stroke-width="6" fill="none" />
-            <text x="150" y="110" text-anchor="middle" fill="#fff" font-size="30" font-family="Segoe UI, Arial">2</text>
+            <circle class="bounce" cx="150" cy="140" r="30" fill="#fff" />
+            <text x="150" y="110" text-anchor="middle" fill="#fff" font-size="30" font-family="Segoe UI, Arial" font-weight="bold">2</text>
           </svg>
           <h3>Project Two</h3>
         </div>
         <div class="project-card" tabindex="0">
-          <svg class="project-img" viewBox="0 0 300 200" aria-label="Project Three Placeholder" role="img">
+          <!-- Animated SVG project placeholder: rotating triangle -->
+          <svg class="project-img" viewBox="0 0 300 200" aria-label="Project Three Placeholder" role="img" xmlns="http://www.w3.org/2000/svg">
             <rect width="300" height="200" rx="15" ry="15" fill="#ff7f50" />
-            <circle class="spin" cx="150" cy="100" r="40" stroke="#fff" stroke-width="6" fill="none" />
-            <text x="150" y="110" text-anchor="middle" fill="#fff" font-size="30" font-family="Segoe UI, Arial">3</text>
+            <g transform="translate(150,100)" class="spinReverse" fill="none" stroke="#fff" stroke-width="6" stroke-linejoin="round">
+              <polygon points="0,-50 43.3,25 -43.3,25" />
+            </g>
+            <text x="150" y="110" text-anchor="middle" fill="#fff" font-size="30" font-family="Segoe UI, Arial" font-weight="bold">3</text>
           </svg>
           <h3>Project Three</h3>
         </div>
@@ -143,4 +161,3 @@
 
 </body>
 </html>
-
