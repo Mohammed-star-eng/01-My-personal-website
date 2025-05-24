@@ -1,105 +1,125 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mohammed | Creative Dev</title>
+  <title>Mohammed's Creative Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
 </head>
 <body>
 
-  <nav>
-    <div class="nav-container">
-      <div class="logo">Mohammed<span>.</span></div>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">Mohammed</div>
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
+        <li><a href="#bio">Bio</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#interests">Interests</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><button id="theme-toggle">☀️</button></li>
       </ul>
+      <div class="theme-toggle">
+        <input type="checkbox" id="theme-switch" />
+        <label for="theme-switch">🌙</label>
+      </div>
     </div>
   </nav>
 
-  <header id="home">
-    <div class="hero animate">
-      <img src="https://i.imgur.com/mtbl1kN.png" alt="Profile Picture" class="hero-img" />
-      <h1>Yo, I'm <span>Mohammed</span></h1>
-      <p>A creative front-end developer & code ninja 🥷</p>
-      <a href="#projects" class="btn">Check My Projects</a>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+      <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-pic" />
+      <h1>Hi, I'm <span>Mohammed</span></h1>
+      <p>A passionate developer crafting engaging web experiences with a touch of creativity and a dash of humor.</p>
     </div>
   </header>
 
-  <section id="skills" class="section dark animate">
-    <h2>🧠 Skills & Tools</h2>
-    <div class="grid">
-      <div class="card">💻 HTML & CSS</div>
-      <div class="card">⚡ JavaScript</div>
-      <div class="card">🎨 Figma</div>
-      <div class="card">🧩 React Basics</div>
-      <div class="card">📱 Responsive UI</div>
-      <div class="card">🕹️ Game Dev Hobbyist</div>
-    </div>
-  </section>
-
-  <section id="projects" class="section animate">
-    <h2>🚀 Featured Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <img src="https://i.imgur.com/Ln0Hc7i.jpg" alt="Project 1">
-        <div class="card-content">
-          <h3>Modern Portfolio</h3>
-          <p>A slick, responsive portfolio with dark/light toggle and animations.</p>
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="https://i.imgur.com/ZKZ8bFX.jpg" alt="Project 2">
-        <div class="card-content">
-          <h3>Gaming Stats UI</h3>
-          <p>Leaderboard dashboard built with CSS Grid and charts.</p>
-        </div>
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2>My Super Powers</h2>
+      <div class="skill-list">
+        <div class="skill">💻 HTML - Structuring the web</div>
+        <div class="skill">🎨 CSS - Styling with flair</div>
+        <div class="skill">⚙️ JavaScript - Bringing pages to life</div>
+        <div class="skill">🧠 UX/UI - Designing intuitive interfaces</div>
+        <div class="skill">🖌️ Graphic Design - Visual storytelling</div>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="section dark animate">
-    <h2>📬 Let's Connect</h2>
-    <p>Got a project? Wanna talk code, games, or tech?</p>
-    <a class="email" href="mailto:mohammed@example.com">mohammed@example.com</a>
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2>My Projects</h2>
+      <p>Here are some of the projects I've worked on:</p>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="https://via.placeholder.com/300x200" alt="Project One" />
+          <h3>Project One</h3>
+        </div>
+        <div class="project-card">
+          <img src="https://via.placeholder.com/300x200" alt="Project Two" />
+          <h3>Project Two</h3>
+        </div>
+        <div class="project-card">
+          <img src="https://via.placeholder.com/300x200" alt="Project Three" />
+          <h3>Project Three</h3>
+        </div>
+      </div>
+    </div>
   </section>
 
+  <!-- Interests Section -->
+  <section class="interests" id="interests">
+    <div class="container">
+      <h2>Things I Like</h2>
+      <div class="interests-grid">
+        <div class="interest">
+          <img src="https://img.icons8.com/emoji/96/coffee.png" alt="Coffee" />
+          <p>Coffee<br><span>Fueling my code sessions.</span></p>
+        </div>
+        <div class="interest">
+          <img src="https://img.icons8.com/emoji/96/camera.png" alt="Photography" />
+          <p>Photography<br><span>Capturing moments.</span></p>
+        </div>
+        <div class="interest">
+          <img src="https://img.icons8.com/emoji/96/video-game.png" alt="Gaming" />
+          <p>Gaming<br><span>Strategic relaxation.</span></p>
+        </div>
+        <div class="interest">
+          <img src="https://img.icons8.com/emoji/96/globe-showing-europe-africa.png" alt="Traveling" />
+          <p>Traveling<br><span>Exploring new horizons.</span></p>
+        </div>
+        <div class="interest">
+          <img src="https://img.icons8.com/emoji/96/musical-notes.png" alt="Music" />
+          <p>Music<br><span>Setting the mood for coding.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out through any of the platforms below:</p>
+      <div class="contact-methods">
+        <a href="mailto:mohammed@example.com" class="contact-link">📧 Email</a>
+        <a href="#" class="contact-link">💼 LinkedIn</a>
+        <a href="#" class="contact-link">🐦 Twitter</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>Built by Mohammed © 2025 | Code, coffee & keyboard rage 💥</p>
+    <div class="container">
+      <p>© 2025 Mohammed. Crafted with passion and coffee.</p>
+    </div>
   </footer>
 
-  <script>
-    // Theme toggle
-    const toggleBtn = document.getElementById('theme-toggle');
-    const root = document.documentElement;
-    const savedTheme = localStorage.getItem('theme') || 'dark';
-
-    document.documentElement.setAttribute('data-theme', savedTheme);
-    toggleBtn.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
-
-    toggleBtn.onclick = () => {
-      const current = root.getAttribute('data-theme');
-      const next = current === 'dark' ? 'light' : 'dark';
-      root.setAttribute('data-theme', next);
-      localStorage.setItem('theme', next);
-      toggleBtn.textContent = next === 'dark' ? '☀️' : '🌙';
-    };
-
-    // Animation on scroll
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('in-view');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('.animate').forEach(el => observer.observe(el));
-  </script>
 </body>
 </html>
