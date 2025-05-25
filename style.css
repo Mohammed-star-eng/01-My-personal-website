@@ -600,7 +600,7 @@ body::after {
   border-radius: 8px;
   text-decoration: none;
   transition: background-color 0.3s ease;
-  margin-top: 2.7rem;
+  margin-top: 2.3rem;
 }
 .cta-button:hover,
 .cta-button:focus {
