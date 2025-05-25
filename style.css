@@ -13,6 +13,7 @@
   --secondary-color: #ffffff;
   --accent-color: #3498db;
   --transition-speed: 0.3s;
+  --project-icon-color: #7f8ff4;
 }
 
 body.dark {
@@ -282,6 +283,15 @@ section {
   color: var(--text-color);
   user-select: none;
   text-align: center;
+}
+
+.project-card i {
+  color: var(--project-icon-color);
+  font-size: 2rem;
+  margin-top: 1rem;
+  display: block;
+  text-align: center;
+  transition: color 0.3s ease;
 }
 
 /* Interests */
