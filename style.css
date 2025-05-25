@@ -308,11 +308,16 @@ section {
 }
 
 .interest img {
-  width: 96px;
-  margin-bottom: 0.8rem;
-  filter: drop-shadow(0 0 1px var(--accent-color));
-  transition: filter 0.3s ease;
-  cursor: default;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.interest:hover img {
+  transform: scale(1.1);
 }
 
 .interest p {
@@ -488,19 +493,6 @@ input:focus,
   background-color: #eaf6ff;
 }
 
-.interest img {
-  width: 64px;
-  height: 64px;
-  margin-bottom: 10px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-
-.interest:hover img {
-  transform: scale(1.1);
-}
-
 .skill-list a {
   display: block;
   text-decoration: none;
@@ -516,39 +508,79 @@ input:focus,
 }
 
 /* Body gradient background and shapes */
-body {
-  position: relative;
-  background: linear-gradient(270deg, #c2e9fb, #a1c4fd, #c2e9fb);
-  background-size: 600% 600%;
-  animation: gradientShift 15s ease infinite;
-  min-height: 100vh;
-  overflow-x: hidden;
-  color: var(--text-color);
-}
-
 body::before,
 body::after {
-  content: '';
-  position: absolute;
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  opacity: 0.05;
   border-radius: 50%;
-  opacity: 0.1;
-  z-index: 0;
+  pointer-events: none;
 }
 
 body::before {
-  width: 300px;
-  height: 300px;
-  background: #a1c4fd;
-  top: -100px;
-  left: -100px;
+  background: radial-gradient(circle at 20% 20%, var(--accent-color), transparent 40%);
+  animation: pulse 20s ease infinite;
+  filter: blur(120px);
+  transform-origin: center center;
 }
 
 body::after {
-  width: 400px;
-  height: 400px;
-  background: #c2e9fb;
-  bottom: -150px;
-  right: -150px;
+  background: radial-gradient(circle at 80% 80%, #a1c4fd, transparent 40%);
+  animation: pulse 25s ease infinite alternate;
+  filter: blur(120px);
+  transform-origin: center center;
+}
+
+/* Additional creative floating blobs */
+.floating-blob {
+  position: fixed;
+  border-radius: 50%;
+  opacity: 0.12;
+  filter: blur(50px);
+  pointer-events: none;
+  z-index: 0;
+  animation: floatUpDown 18s ease-in-out infinite;
+}
+
+.floating-blob:nth-child(1) {
+  width: 250px;
+  height: 250px;
+  background: var(--accent-color);
+  top: 15%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.floating-blob:nth-child(2) {
+  width: 300px;
+  height: 300px;
+  background: #72a7f7;
+  top: 60%;
+  left: 75%;
+  animation-delay: 7s;
+}
+
+.floating-blob:nth-child(3) {
+  width: 180px;
+  height: 180px;
+  background: #a9c9ff;
+  top: 45%;
+  left: 40%;
+  animation-delay: 3.5s;
+}
+
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-35px) translateX(25px);
+  }
 }
 
 
