@@ -518,7 +518,7 @@ input:focus,
 /* Body gradient background and shapes */
 body {
   position: relative;
-  background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%);
+  background: linear-gradient(135deg, #f5fcff 0%, #ffffff 100%);
   min-height: 100vh;
   overflow-x: hidden;
   color: var(--text-color);
@@ -529,14 +529,14 @@ body::after {
   content: '';
   position: absolute;
   border-radius: 50%;
-  opacity: 0.08;
+  opacity: 0.05;
   z-index: 0;
 }
 
 body::before {
   width: 300px;
   height: 300px;
-  background: #81d4fa;
+  background: #e0f7fa;
   top: -100px;
   left: -100px;
 }
@@ -544,10 +544,11 @@ body::before {
 body::after {
   width: 400px;
   height: 400px;
-  background: #b3e5fc;
+  background: #e1f5fe;
   bottom: -150px;
   right: -150px;
 }
+
 
 
 
